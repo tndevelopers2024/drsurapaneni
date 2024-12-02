@@ -218,16 +218,13 @@ $(function () {
 			}
 		});
 	}
-
+		var currentPath = window.location.pathname.split("/").pop();
+	  
+		$("nav ul li a").each(function () {
+		  if ($(this).attr("href") === currentPath) {
+			$(this).parent().addClass("mil-active");
+		  }
+		});
+	  
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-	const navLinks = document.querySelectorAll("nav ul li a");
-	const currentPath = window.location.pathname.split("/").pop();
-  
-	navLinks.forEach(link => {
-	  if (link.getAttribute("href") === currentPath) {
-		link.parentElement.classList.add("mil-active");
-	  }
-	});
-  });

@@ -2273,5 +2273,31 @@ contact
 .mil-box-list ul{
   padding-left: 20px;
 }
-/* codepen code */
+@media (max-width:600px){
+  .mil-op-space-150 {
+    padding-top: 0;
+}
+.mil-op-space-90 {
+  padding-bottom: 40px;
+}
+.mil-box-list ul li:nth-child(odd) {
+  text-align: start;
+  padding-right: 0;
+}
+.mil-box-list ul li:nth-child(even) {
+  text-align: start;
+  padding-left: 0;
+}
+.mil-box-list ul li::before {
+  left: -21px;
+  top: 5px;
+}
 
+.mil-box-list ul::before {
+  left: 3px;
+  top: 6px;
+}
+.mil-op-space-200 {
+  padding-top: 150px;
+}
+}
