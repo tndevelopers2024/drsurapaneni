@@ -37,7 +37,7 @@
                 </a>
                 <nav>
                     <ul>
-                        <li>
+                        <li class="mil-active" >
                             <a href="index.html">Home</a>
                            
                         </li>
@@ -1087,24 +1087,7 @@ February 2014 at                                             </p>
 
     <!-- treto js -->
     <script src="js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-  var currentPath = window.location.pathname.split("/").pop(); // Get the current page name
-
-  if (currentPath === "") {
-    currentPath = "index.html"; // Default page if no file in URL
-  }
-
-  $("nav ul li a").each(function () {
-    var linkPath = $(this).attr("href").split("/").pop(); // Get the href filename
-
-    if (linkPath === currentPath) {
-      $(this).parent().addClass("mil-active");
-    }
-  });
-});
-
-    </script>
+    
 </body>
 
 </html>
