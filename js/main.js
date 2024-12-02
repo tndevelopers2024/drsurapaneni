@@ -218,13 +218,5 @@ $(function () {
 			}
 		});
 	}
-		var currentPath = window.location.pathname.split("/").pop();
-	  
-		$("nav ul li a").each(function () {
-		  if ($(this).attr("href") === currentPath) {
-			$(this).parent().addClass("mil-active");
-		  }
-		});
-	  
-});
 
+});
